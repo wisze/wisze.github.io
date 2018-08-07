@@ -17,6 +17,31 @@ var water = new ol.layer.Tile({source: new ol.source.Stamen({layer: 'watercolor'
 //------------------------------------------------------------
 //                     Edwin lagen
 //------------------------------------------------------------
+var wikinl  = new ol.layer.Vector({
+  source: new ol.source.Vector({
+    url: 'http://wiki.wisze.net/lib/exe/fetch.php/nl/sitemap.kml',
+    dataProjection: 'EPSG:4326',
+    format: new ol.format.KML(),
+    visible: true
+  })
+});
+wikinl.set('name', 'Wiki NL');
+wikinl.set('baselayer', false);
+
+var wikien  = new ol.layer.Vector({
+  source: new ol.source.Vector({
+    url: 'http://wiki.wisze.net/lib/exe/fetch.php/en/sitemap.kml',
+    dataProjection: 'EPSG:4326',
+    format: new ol.format.KML(),
+    visible: true
+  })
+});
+wikien.set('name', 'Wiki EN');
+wikien.set('baselayer', false);
+
+//------------------------------------------------------------
+//                     Satnav lagen
+//------------------------------------------------------------
 var waypoints  = new ol.layer.Image({
   source: new ol.source.ImageWMS({
     url: 'http://wold.xs4all.nl/cgi-bin/mapserv?map=/var/www/html/edwin/edwin.map&service=wms&',
@@ -87,26 +112,41 @@ var elevation  = new ol.layer.Image({
 elevation.set('name', 'Elevation');
 elevation.set('baselayer', false);
 
-var beidou  = new ol.layer.Image({
+var beidou_used  = new ol.layer.Image({
   source: new ol.source.ImageWMS({
     url: 'http://wold.xs4all.nl/cgi-bin/mapserv?map=/var/www/html/edwin/beidou.map&service=wms&',
     params: {
-      'LAYERS': 'Used,BeidouPoints',
+      'LAYERS': 'Used',
       'FORMAT': 'image/png'
     },
     projection: projused,
     serverType: /** @type {ol.source.WMSServerType} */ ('mapserver')
   })
 });
-beidou.set('name', 'Used');
-beidou.set('baselayer', false);
+beidou_used.set('name', 'Used');
+beidou_used.set('baselayer', false);
+
+var beidou_points  = new ol.layer.Image({
+  source: new ol.source.ImageWMS({
+    url: 'http://wold.xs4all.nl/cgi-bin/mapserv?map=/var/www/html/edwin/beidou.map&service=wms&',
+    params: {
+      'LAYERS': 'BeidouPoints',
+      'FORMAT': 'image/png'
+    },
+    projection: projused,
+    serverType: /** @type {ol.source.WMSServerType} */ ('mapserver')
+  })
+});
+beidou_points.set('name', 'BeidouPoints');
+beidou_points.set('baselayer', false);
 //------------------------------------------------------------
 //                       The map
 //------------------------------------------------------------
 // var layerlist = [ osm, trackpoints, waypoints ];
 // var navmaplayers = [ osm, activity, trackpoints, waypoints ];
-var navmaplayers = [ osm, activity, tracks, trackpoints, waypoints ];
-var beidoulayers = [ osm, beidou ];
+var edwinlayers  = [ water, wikinl, wikien ];
+var navmaplayers = [ toner, activity, tracks, trackpoints, waypoints ];
+var beidoulayers = [ osm, beidou_used, beidou_points ];
 var heightlayers = [ osm, elevation, tracks, trackpoints, waypoints ];
 
 var overview = new ol.View({ projection: projused,
@@ -135,6 +175,7 @@ function layers(e,topic) {
   //   map.render();
   // } else {
   //   e.style.color = 'red';
+  if (topic == 'edwin')     {map.setLayerGroup(new ol.layer.Group({layers: edwinlayers}));}
   if (topic == 'overview')  {map.setLayerGroup(new ol.layer.Group({layers: navmaplayers}));}
   if (topic == 'beidou')    {map.setLayerGroup(new ol.layer.Group({layers: beidoulayers}));}
   if (topic == 'elevation') {map.setLayerGroup(new ol.layer.Group({layers: heightlayers}));}
