@@ -144,16 +144,10 @@ beidou_points.set('baselayer', false);
 //------------------------------------------------------------
 // var layerlist = [ osm, trackpoints, waypoints ];
 // var navmaplayers = [ osm, activity, trackpoints, waypoints ];
-<<<<<<< HEAD
 var edwinlayers  = [ water, wikinl, wikien ];
 var navmaplayers = [ toner, activity, tracks, trackpoints, waypoints ];
 var beidoulayers = [ osm, beidou_used, beidou_points ];
 var heightlayers = [ osm, elevation, tracks, trackpoints, waypoints ];
-=======
-var navmaplayers = [ osm, tracks, trackpoints, waypoints ];
-var beidoulayers = [ osm, beidou ];
-var heightlayers = [ osm, elevation, trackpoints, waypoints ];
->>>>>>> 9839c5443160ad71db25fd5d4a0ddeed28331d76
 
 var overview = new ol.View({ projection: projused,
                  center: [0, 0], zoom: 2 })
