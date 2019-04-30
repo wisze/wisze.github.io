@@ -21,6 +21,7 @@ var wikinl  = new ol.layer.Vector({
   source: new ol.source.Vector({
     url: 'http://wiki.wisze.net/lib/exe/fetch.php/nl/sitemap.kml',
     format: new ol.format.KML({extractStyles: false}),
+    projection: 'EPSG:3857',
     visible: true
   })
 });
@@ -31,6 +32,7 @@ var wikien  = new ol.layer.Vector({
   source: new ol.source.Vector({
     url: 'http://wiki.wisze.net/lib/exe/fetch.php/en/sitemap.kml',
     format: new ol.format.KML({extractStyles: false}),
+    projection: 'EPSG:3857',
     visible: true
   })
 });
