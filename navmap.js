@@ -20,7 +20,6 @@ var water = new ol.layer.Tile({source: new ol.source.Stamen({layer: 'watercolor'
 var wikinl  = new ol.layer.Vector({
   source: new ol.source.Vector({
     url: 'http://wiki.wisze.net/lib/exe/fetch.php/nl/sitemap.kml',
-    dataProjection: 'EPSG:4326',
     format: new ol.format.KML({extractStyles: false}),
     visible: true
   })
@@ -31,7 +30,6 @@ wikinl.set('baselayer', false);
 var wikien  = new ol.layer.Vector({
   source: new ol.source.Vector({
     url: 'http://wiki.wisze.net/lib/exe/fetch.php/en/sitemap.kml',
-    dataProjection: 'EPSG:4326',
     format: new ol.format.KML({extractStyles: false}),
     visible: true
   })
