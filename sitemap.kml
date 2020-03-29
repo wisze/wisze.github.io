@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:atom="http://www.w3.org/2005/Atom" xsi:schemaLocation="http://www.opengis.net/kml/2.2 http://schemas.opengis.net/kml/2.2.0/ogckml22.xsd">
+<Document id="root_doc">
+<name>Edwins web spatial sitemap</name>
+<atom:link href="http://wiki.wisze.net/" rel="related" type="text/html" />
+<!-- atom:updated>2019-04-27T15:45:08+02:00</atom:updated -->
+<Style id="icon"><IconStyle><color>ffffffff</color><scale>1</scale><Icon><href>/lib/plugins/spatialhelper/wikiitem.png</href></Icon></IconStyle></Style>
+<Placemark id="crc32-950921e7">
+  <name>De Zeemeeuw, een chinese camera</name>
+  <atom:link href="/doku.php/nl/fotografie/zeemeeuw?1" rel="alternate" type="text/html" />
+  <description><![CDATA[<p>De Zeemeeuw, een chinese camera
+
+Jaren geleden was in Europa een chinees merk camera op de markt. De chinezen hadden hun eigen versies van een aantal populaire cameras ontwikkeld. In de 60er en 70er jaren waren Rolleiflex en Rolleicord cameras heel populair, zowel onder beroepsfotografen als onder amateurs die ze betalen konden.</p><p><a href="http://wiki.wisze.net/doku.php/nl/fotografie/zeemeeuw">De Zeemeeuw, een chinese camera</a></p>]]></description>
+  <styleUrl>#icon</styleUrl>
+  <Point><coordinates>104.037023,30.662610</coordinates></Point>
+</Placemark>
+<Placemark id="crc32-9171b694">
+  <name>Kaarten</name>
+  <atom:link href="/doku.php/nl/kaarten/start?1" rel="alternate" type="text/html" />
+  <description><![CDATA[<p>Kaarten
+
+Deze stukjes gaan over kaarten in de breedste zin van het woord. Zoals een stukje over een Een luistergidskaart die je in China op een aantal toeristische attracties meekrijgt. Een stukje over een chinese portolaan. De kaarten van de jezuïeten in China. Maar ook stukjes over Beidou, het chinese satnav systeem.
+
+Alle pagina's over kaarten en geografie:</p><p><a href="http://wiki.wisze.net/doku.php/nl/kaarten/start">Kaarten</a></p>]]></description>
+  <styleUrl>#icon</styleUrl>
+  <Point><coordinates>0.0,90.0</coordinates></Point>
+</Placemark>
+<Placemark id="crc32-e71ca8ea">
+  <name>Plaatsen</name>
+  <atom:link href="/doku.php/nl/plaatsen/start?1" rel="alternate" type="text/html" />
+  <description><![CDATA[<p>Plaatsen
+[KML sitemap of this wiki]
+De kaart toont de plaatsen waar de tekstjes in de wiki over gaan.</p><p><a href="http://wiki.wisze.net/doku.php/nl/plaatsen/start">Plaatsen</a></p>]]></description>
+  <styleUrl>#icon</styleUrl>
+  <Point><coordinates>0.0,90.0</coordinates></Point>
+</Placemark>
+<Placemark id="crc32-1d898680">
+  <name>De koning van Brunei</name>
+  <atom:link href="/doku.php/nl/plaatsen/boni?1" rel="alternate" type="text/html" />
+  <description><![CDATA[<p>De koning van Brunei
+
+ In Nanjing zijn overal tussen de nieuwe wegen en de wolkenkrabbers nog kleine plekken geschiedenis te vinden. Omdat het ooit de hoofdstad van heel China was niet zo verwonderlijk. Iedereen kent de grote attracties. De muur natuurlijk, de 明孝陵 tombe van de eerste Ming 洪武 keizer (Hongwu), Nanjing heeft veel grote en indrukwekkende monumenten.</p><p><a href="http://wiki.wisze.net/doku.php/nl/plaatsen/boni">De koning van Brunei</a></p>]]></description>
+  <styleUrl>#icon</styleUrl>
+  <Point><coordinates>118.75233,31.97875</coordinates></Point>
+</Placemark>
+<Placemark id="crc32-74e1b4d3">
+  <name>Meneer Shen vertelt: de Jezuïeten en de keizer</name>
+  <atom:link href="/doku.php/nl/plaatsen/zhalan?1" rel="alternate" type="text/html" />
+  <description><![CDATA[<p>Meneer Shen vertelt: de Jezuïeten en de keizer
+
+ In de tweede helft van de zestiende eeuw begonnen de Jezuïeten een grote onderneming: het bekeren van China tot het christendom. Vrij ambitieus, en dat wisten ze. De eerste westerlingen die over China berichtten vertelden over een groots rijk met grote en rijke steden. De Jezuiten betreden het Rijk van het Midden dus met gepast ontzag.</p><p><a href="http://wiki.wisze.net/doku.php/nl/plaatsen/zhalan">Meneer Shen vertelt: de Jezuïeten en de keizer</a></p>]]></description>
+  <styleUrl>#icon</styleUrl>
+  <Point><coordinates>116.34152,39.92908</coordinates></Point>
+</Placemark>
+<Placemark id="crc32-4d3c0a54">
+  <name>用不中, Slauerhoff's China</name>
+  <atom:link href="/doku.php/nl/boeken/slauerhoffs_china?1" rel="alternate" type="text/html" />
+  <description><![CDATA[<p>用不中, Slauerhoff's China
+
+ Aan het begin van de 20e eeuw was China voor Europeanen een ver en mysterieuze wereld. Sinds de helft van de 19e eeuw was China niet geheel vrijwillig begonnen zich open te stellen voor de wereld. Twee van de havensteden waar westerse bedrijven mochten gaan handelen waren Amy (Xiamen) en Shanghai. Slauerhoff voer op deze havens en maakte zo kennis met China.</p><p><a href="http://wiki.wisze.net/doku.php/nl/boeken/slauerhoffs_china">用不中, Slauerhoff's China</a></p>]]></description>
+  <styleUrl>#icon</styleUrl>
+  <Point><coordinates>118.075240,24.444630</coordinates></Point>
+</Placemark>
+<Placemark id="crc32-053fb6ad">
+  <name>Chinees leren bij Confucius</name>
+  <atom:link href="/doku.php/nl/china/confucius?1" rel="alternate" type="text/html" />
+  <description><![CDATA[<p>Chinees leren bij Confucius
+
+ Om het land beter te lezen kennen heb ik chinees geleerd in de tijd dat ik daar regelmatig kwam. Ik had geen praktische reden om chinees te leren. Om rond te reizen kan je best met Engels toe, er zijn genoeg chinezen die Engels spreken en die je willen helpen. Maar om de mensen een beetje te begrijpen en niet helemaal als een buitenstaander rond te lopen is het wel handig als je wat Chinees spreekt. Ik begon bij een Chinese school in Amsterdam maar daar kregen we le…</p><p><a href="http://wiki.wisze.net/doku.php/nl/china/confucius">Chinees leren bij Confucius</a></p>]]></description>
+  <styleUrl>#icon</styleUrl>
+  <Point><coordinates>6.563507,53.219991</coordinates></Point>
+</Placemark>
+<Placemark id="crc32-57f84995">
+  <name>De sloop van Nanjing</name>
+  <atom:link href="/doku.php/nl/china/sloop?1" rel="alternate" type="text/html" />
+  <description><![CDATA[<p>De sloop van Nanjing
+
+ In de oudere wijken van willekeurige chinese stad zie ja vaak twee karakters op de muren: 搬迁. Het betekent letterlijk “verhuizen”. Met die twee karakters wordt aangegeven dat het pand binnenkort gesloopt wordt. Meestal samen met de complete wijk eromheen.</p><p><a href="http://wiki.wisze.net/doku.php/nl/china/sloop">De sloop van Nanjing</a></p>]]></description>
+  <styleUrl>#icon</styleUrl>
+  <Point><coordinates>118.773109,32.010456</coordinates></Point>
+</Placemark>
+<Placemark id="crc32-7eeb038a">
+  <name>Navspark satellietnavigatie ontvanger</name>
+  <atom:link href="/doku.php/nl/digitaal/navspark?1" rel="alternate" type="text/html" />
+  <description><![CDATA[<p>Navspark satellietnavigatie ontvanger
+
+ Zelf een ontvanger maken voor satellietnavigatie is interessant om te doen en geeft je de mogelijkheid om een apparaat te maken wat met één systeem werkt. Dus als je wil zien hoe bijvoorbeeld het russische Glonass of het chinese 北斗 werkt met of naast het amerikaanse GPS. Een taiwanees bedrijf maakt kleine ontvangers op een Arduino programeerbaar bordje. Omdat het programmeerbaar is kan je het met één systeem laten werken, een scherm aansluiten of andere se…</p><p><a href="http://wiki.wisze.net/doku.php/nl/digitaal/navspark">Navspark satellietnavigatie ontvanger</a></p>]]></description>
+  <styleUrl>#icon</styleUrl>
+  <Point><coordinates>6.054507,52.800528</coordinates></Point>
+</Placemark>
+<Placemark id="crc32-e22915eb">
+  <name>Blauwdruk</name>
+  <atom:link href="/doku.php/nl/fotografie/blauwdruk?1" rel="alternate" type="text/html" />
+  <description><![CDATA[<p>Blauwdruk
+
+ De blauwdruk, of in het buitenlands: de cyanotypie is een 19e eeuwse fototechniek om een afdruk te maken van een negatief. Het is veel gebruikt als reproductietechniek. Vooral om bijvoorbeeld technische tekeningen te reproduceren. Maar als fototechniek is het in in onbruik geraakt. Ten eerste omdat het, zoals de naam al suggereert, tot een knalblauwe afdruk leidt en ten tweede omdat het een vrij harde afdruk geeft zonder veel subtiele tinten. Maar blauwdruk heeft ook voordelen: het i…</p><p><a href="http://wiki.wisze.net/doku.php/nl/fotografie/blauwdruk">Blauwdruk</a></p>]]></description>
+  <styleUrl>#icon</styleUrl>
+  <Point><coordinates>4.884828,52.367506</coordinates></Point>
+</Placemark>
+<Placemark id="crc32-e6286096">
+  <name>De kaart van Matteo Ricci</name>
+  <atom:link href="/doku.php/nl/kaarten/kaart_ricci?1" rel="alternate" type="text/html" />
+  <description><![CDATA[<p>De kaart van Matteo Ricci
+
+Op een van de vele China tentoonstellingen in Nederland, de Ming expositie in de Nieuwe Kerk, is een kaart te zien die voor het wereldbeeld van China en van Europa een mijlpaal betekende: de wereldkaart van de Jezuïet Matteo Ricci.</p><p><a href="http://wiki.wisze.net/doku.php/nl/kaarten/kaart_ricci">De kaart van Matteo Ricci</a></p>]]></description>
+  <styleUrl>#icon</styleUrl>
+  <Point><coordinates>118.778174,32.040885</coordinates></Point>
+</Placemark>
+<Placemark id="crc32-d3cccbeb">
+  <name>De wereldaarten van Blaeu en Verbiest</name>
+  <atom:link href="/doku.php/nl/kaarten/kaarten_blaeu_verbiest?1" rel="alternate" type="text/html" />
+  <description><![CDATA[<p>De wereldaarten van Blaeu en Verbiest
+
+ Het scheepvaartmuseum heeft twee wereldkaarten in de collectie door ver van elkaar verwijderde cartografen gemaakt zijn en die toch alles met elkaar te maken hebben. De kaart uit 1674 van Ferdinand Verbiest, hofastronoom voor de chinese 康熙 (Kangxi) keizer is gebaseerd op dezelfde informatie als de wereldkaart van Blaeu uit 1648. De Blaeu kaart liet onder meer nieuwe kennis van China zien. En die kennis kwam weer van een andere Jezuit, Martino Martini. Mart…</p><p><a href="http://wiki.wisze.net/doku.php/nl/kaarten/kaarten_blaeu_verbiest">De wereldaarten van Blaeu en Verbiest</a></p>]]></description>
+  <styleUrl>#icon</styleUrl>
+  <Point><coordinates>4.892311,52.374648</coordinates></Point>
+</Placemark>
+<Placemark id="crc32-f0f91fac">
+  <name>Een luistergidskaart</name>
+  <atom:link href="/doku.php/nl/kaarten/luistergidskaart?1" rel="alternate" type="text/html" />
+  <description><![CDATA[<p>Een luistergidskaart
+
+ In de verboden stad in Beijing kan je een audiogidsje huren om meer informatie te krijgen over het paleiscomplex. Het is niet zo maar een ding waar je en nummer in moet tikken om een tekst te horen. Deze gids laat een kaart zien met een aantal ledjes. De locaties van de ledjes geeft aan waar uitleg beschikbaar is. Een knipperend lampje laat zien waar je op dat moment bent. Alle teksten die je nog niet gehoord hebt staan opgelicht op de kaart. Het je een tekst beluisterd da…</p><p><a href="http://wiki.wisze.net/doku.php/nl/kaarten/luistergidskaart">Een luistergidskaart</a></p>]]></description>
+  <styleUrl>#icon</styleUrl>
+  <Point><coordinates>120.09655,30.24341</coordinates></Point>
+</Placemark>
+<Placemark id="crc32-fc45b56a">
+  <name>Het idee van dokter Zamenhof</name>
+  <atom:link href="/doku.php/nl/plaatsen/esperanto?1" rel="alternate" type="text/html" />
+  <description><![CDATA[<p>Het idee van dokter Zamenhof
+
+Esperanto kennen we als de bedachte taal. Bedoeld als taal om verschillende volkeren met elkaar te kunnen praten door dokter Zamenhof, een oogarts in Bialystok. In Bialystok vier talen gesproken werden door de verschillende groepen in de stad dus een gemeenschappelijke taal leek hem handig. Als taal is het niet het succes geworden waarop de bedenker gehoopt had. De invoering van Esperanto als gemeenschappelijke tweede taal liep stuk op de politieke ambities van wie …</p><p><a href="http://wiki.wisze.net/doku.php/nl/plaatsen/esperanto">Het idee van dokter Zamenhof</a></p>]]></description>
+  <styleUrl>#icon</styleUrl>
+  <Point><coordinates>1.605656,50.724859</coordinates></Point>
+</Placemark>
+<Placemark id="crc32-cea0b606">
+  <name>De meridiaan van Arago</name>
+  <atom:link href="/doku.php/nl/plaatsen/meridiaan_van_parijs?1" rel="alternate" type="text/html" />
+  <description><![CDATA[<p>De meridiaan van Arago
+
+ Parijs heeft geen gebrek monumenten en standbeelden. Het grootste monument is zo groot als de binnenstad van Parijs zelf en strekt zich uit van de noordkant van de périferique tot de zuidkant. Toch is het een monument waar je zo langs loopt, of recht erover heen als je niet weet waar je op moet letten. Het monument voor Arago is de meridiaan van Parijs. Het monument bestaat uit koperen plaatjes van ongeveer 5 centimeter die op de stoep bevestigd zijn op plekken waar de m…</p><p><a href="http://wiki.wisze.net/doku.php/nl/plaatsen/meridiaan_van_parijs">De meridiaan van Arago</a></p>]]></description>
+  <styleUrl>#icon</styleUrl>
+  <Point><coordinates>2.336565,48.834394</coordinates></Point>
+</Placemark>
+<Placemark id="crc32-7623aec0">
+  <name>De sterrenwacht van Nanjing</name>
+  <atom:link href="/doku.php/nl/plaatsen/nanjingsterrenwacht?1" rel="alternate" type="text/html" />
+  <description><![CDATA[<p>De sterrenwacht van Nanjing
+
+ In de stad Nanjing, naast het Xuanwu (玄武) meer in het midden van de stad ligt de Purperen Berg (紫金山). De Purperen Berg is tegenwoordig omgeven door de stad Nanjing maar zelf niet bebouwd met nieuwe wijken en daardoor een oase tussen de oude stad aan de ene, en de uitgestrekte nieuwe wijken aan de andere kant van de berg. Op en rond de berg vind je de mausoleums van de eerste Ming (洪武) keizer, die van Nanjing de hoofdstad maakt, en van Sun Yat-sen (孙中山) de eerste pre…</p><p><a href="http://wiki.wisze.net/doku.php/nl/plaatsen/nanjingsterrenwacht">De sterrenwacht van Nanjing</a></p>]]></description>
+  <styleUrl>#icon</styleUrl>
+  <Point><coordinates>118.829524,32.066466</coordinates></Point>
+</Placemark>
+<Placemark id="crc32-fa7fe37a">
+  <name>Zo langzaam mogelijk</name>
+  <atom:link href="/doku.php/nl/plaatsen/zo_langzaam_mogelijk?1" rel="alternate" type="text/html" />
+  <description><![CDATA[<p>Zo langzaam mogelijk
+
+ In het stadje Halberstadt in Duitsland kan je een bijzonder concert bijwonen. Het is een uitvoering van As slow as possible van John Cage. De uitvoering van deze versie duurt 639 jaar. Het overstijgt daarmee alles wat een mens in zijn leven kan bereiken. We kunnen het stuk alleen bezoeken, een stukje meemaken van wat voor ons mensen een eeuwigheid is. De uitvoering is begonnen in 2001 en duurt dus tot 2640. Het stuk duurt 639 jaar omdat het op het moment dat de uitvoering …</p><p><a href="http://wiki.wisze.net/doku.php/nl/plaatsen/zo_langzaam_mogelijk">Zo langzaam mogelijk</a></p>]]></description>
+  <styleUrl>#icon</styleUrl>
+  <Point><coordinates>11.042130,51.901379</coordinates></Point>
+</Placemark>
+<Placemark id="crc32-6931d56d">
+  <name>Sterrenkijken op de vierkante meter</name>
+  <atom:link href="/doku.php/nl/ruimte/carre_d_etoiles?1" rel="alternate" type="text/html" />
+  <description><![CDATA[<p>Sterrenkijken op de vierkante meter
+
+ In Frankrijk zijn de nachten nog donker. Als je een eindje buiten de stad bent, zie je al veel meer sterren dan je in Nederland normaal aan de hemel ziet. Waar onze hemel continu aangestraald en uitgelicht wordt door de industrie, de steden en vooral de kassen kan je in Frankrijk nog aardig donkere plekken vinden. Een prachtig land om sterren te gaan kijken. Naast de donkere hemel staan als bonus de planeten ook nog eens een stukje hoger aan de zomerhemel en…</p><p><a href="http://wiki.wisze.net/doku.php/nl/ruimte/carre_d_etoiles">Sterrenkijken op de vierkante meter</a></p>]]></description>
+  <styleUrl>#icon</styleUrl>
+  <Point><coordinates>0.78698,48.08474</coordinates></Point>
+</Placemark>
+<Placemark id="crc32-d5b1b72f">
+  <name>De zonsverduistering van 2017</name>
+  <atom:link href="/doku.php/nl/ruimte/eclips_2017?1" rel="alternate" type="text/html" />
+  <description><![CDATA[<p>De zonsverduistering van 2017
+
+ Na de zonsverduistering van 1999 wilden we nog een keer een zonsverduistering meemaken. De zonsverduistering van 1999 ging over heel Europa over van Engeland tot Roemenie. Die van 2017 ging over heel de Verenigde Staten, van westkust tot de oostkust. De schaduw van de maan passeerde net ten zuiden van Yellowstone Park langs door Grand Teton national park. Een prachtige locatie om de zonsverduistering te zien. Het weer is er in augustus meestal vrij goed met een he…</p><p><a href="http://wiki.wisze.net/doku.php/nl/ruimte/eclips_2017">De zonsverduistering van 2017</a></p>]]></description>
+  <styleUrl>#icon</styleUrl>
+  <Point><coordinates>249.42194,43.8785</coordinates></Point>
+</Placemark>
+<Placemark id="crc32-1a5c5722">
+  <name>钱学森, de vader van de chinese ruimtevaart</name>
+  <atom:link href="/doku.php/nl/ruimte/qianxuesen?1" rel="alternate" type="text/html" />
+  <description><![CDATA[<p>钱学森, de vader van de chinese ruimtevaart
+
+ De chinezen maken de laatste jaren grote stappen in de ruimtevaart. Dat succes is niet ineens gekomen, het is het product van een ontwikkeling van vele decenia. In de tijd dat China in feite nog een arm land was had het al een ambitieus ruimtevaartprogramma (zij het met wisselend succes). Aan de basis van het programma staat een briljante wetenschapper en organisator: 钱学森.</p><p><a href="http://wiki.wisze.net/doku.php/nl/ruimte/qianxuesen">钱学森, de vader van de chinese ruimtevaart</a></p>]]></description>
+  <styleUrl>#icon</styleUrl>
+  <Point><coordinates>121.430986,31.202814</coordinates></Point>
+</Placemark>
+<Placemark id="crc32-55c49f53">
+  <name>Op zoek naar Shenzhou</name>
+  <atom:link href="/doku.php/nl/ruimte/shenzhou?1" rel="alternate" type="text/html" />
+  <description><![CDATA[<p>Op zoek naar Shenzhou
+
+ Op zoek naar 神舟 China heeft de afgelopen jaren aardige successen bereikt in ruimtevaart. Je zou verwachten dat ze dat breed uitmeten, met een groot museum waar ze de wereld tonen wat China tegenwoordig kan. Maar zo ligt het toch niet. Deze reis was het zien van de Shenzhou capsules een van mijn doelen. Maar waar zijn ze te vinden?</p><p><a href="http://wiki.wisze.net/doku.php/nl/ruimte/shenzhou">Op zoek naar Shenzhou</a></p>]]></description>
+  <styleUrl>#icon</styleUrl>
+  <Point><coordinates>116.400920,39.805087</coordinates></Point>
+</Placemark>
+</Document>
+</kml>

@@ -6,6 +6,9 @@ var projused = new ol.proj.Projection({
    code: 'EPSG:3857',
    extent: [-20026376.39, -20048966.10, 20026376.39, 20048966.10]
 });
+var projdata = new ol.proj.Projection({
+   code: 'EPSG:4326'
+});
 
 //------------------------------------------------------------
 //                  Background layers       
@@ -19,10 +22,14 @@ var water = new ol.layer.Tile({source: new ol.source.Stamen({layer: 'watercolor'
 //------------------------------------------------------------
 var wikinl  = new ol.layer.Vector({
   source: new ol.source.Vector({
-    url: 'http://wiki.wisze.net/lib/exe/fetch.php/nl/sitemap.kml',
-    extractStyles: false,
-    format: new ol.format.KML(),
-    projection: 'EPSG:3857',
+    // url: 'http://wiki.wisze.net/lib/exe/fetch.php/nl/sitemap.kml',
+    url: 'sitemap.kml',
+    projection: projused,
+    dataProjection: projdata,
+    extractStyles: false, 
+    format: new ol.format.KML({
+      extractStyles: true, 
+      extractAttributes: true }),
     visible: true
   })
 });
@@ -31,10 +38,14 @@ wikinl.set('baselayer', false);
 
 var wikien  = new ol.layer.Vector({
   source: new ol.source.Vector({
-    url: 'http://wiki.wisze.net/lib/exe/fetch.php/en/sitemap.kml',
-    extractStyles: false,
-    format: new ol.format.KML(),
-    projection: 'EPSG:3857',
+    // url: 'http://wiki.wisze.net/lib/exe/fetch.php/en/sitemap.kml',
+    url: 'sitemap.kml',
+    projection: projused,
+    dataProjection: projdata,
+    extractStyles: false, 
+    format: new ol.format.KML({
+      extractStyles: false, 
+      extractAttributes: true }),
     visible: true
   })
 });
@@ -100,6 +111,20 @@ var activity  = new ol.layer.Image({
 activity.set('name', 'Activity');
 activity.set('baselayer', false);
 
+var countries  = new ol.layer.Image({
+  source: new ol.source.ImageWMS({
+    url: 'http://wold.xs4all.nl/cgi-bin/mapserv?map=/var/www/html/edwin/edwin.map&service=wms&',
+    params: {
+      'LAYERS': 'Countries',
+      'FORMAT': 'image/png'
+    },
+    projection: projused,
+    serverType: /** @type {ol.source.WMSServerType} */ ('mapserver')
+  })
+});
+countries.set('name', 'Countries');
+countries.set('baselayer', false);
+
 var elevation  = new ol.layer.Image({
   source: new ol.source.ImageWMS({
     url: 'http://wold.xs4all.nl/cgi-bin/mapserv?map=/var/www/html/edwin/edwin.map&service=wms&',
@@ -146,10 +171,10 @@ beidou_points.set('baselayer', false);
 //------------------------------------------------------------
 // var layerlist = [ osm, trackpoints, waypoints ];
 // var navmaplayers = [ osm, activity, trackpoints, waypoints ];
+var navmaplayers = [ toner, countries, tracks, waypoints ];
 var edwinlayers  = [ water, wikinl, wikien ];
-var navmaplayers = [ toner, activity, tracks, trackpoints, waypoints ];
 var beidoulayers = [ osm, beidou_used, beidou_points ];
-var heightlayers = [ osm, elevation, tracks, trackpoints, waypoints ];
+var heightlayers = [ osm, elevation, tracks, waypoints ];
 
 var overview = new ol.View({ projection: projused,
                  center: [0, 0], zoom: 2 })

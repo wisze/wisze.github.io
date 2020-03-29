@@ -5,8 +5,10 @@
     <link rel="stylesheet" href="./kaart.css" type="text/css">
     <script src="https://openlayers.org/en/v3.20.1/build/ol.js" type="text/javascript"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/proj4js/2.3.15/proj4.js"></script>
+    <script src="https://epsg.io/4326.js"></script>
     <script src="https://epsg.io/3857.js"></script>
-    <title>Edwins map</title>
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=0.7">
+    <title>Edwins kaart</title>
   </head>
   <body>
     <div id="map" class="map"></div>
@@ -17,11 +19,15 @@
           <p id="explain">Over the years i collected millions of
              locations using a series of satnav receivers. 
              My map shows waypoints, trackpoints and number of
-             trackpoints per hexagon.</p>
+             trackpoints per hexagon. My hexagons in Plate Carree
+             look afwul in Web Mercator, apologies.
+             Tracks are color coded by average speed, blue is slow and red is fast</p>
         </div>
         <div id="button" onclick="layers(this,'edwin')">
           <h1 id="title">Wikimap</h1>
-          <p id="explain">Map of some texts i wrote on my wiki.</p>
+          <p id="explain">Map of some texts i wrote on my wiki.
+             Links are not functional (yet).
+             Gotta fix that one of these days.</p>
         </div>
         <div id="button" onclick="layers(this,'beidou')">
           <h1 id="title">Beidou</h1>
