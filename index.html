@@ -15,13 +15,17 @@
     <script src="navmap.js" type="text/javascript"> </script>
       <div id="buttonbar">
         <div id="button" onclick="layers(this,'overview')">
-          <h1 id="title">Satnav</h1>
+          <h1 id="title">Tracks</h1>
           <p id="explain">Over the years i collected millions of
              locations using a series of satnav receivers. 
-             My map shows waypoints, trackpoints and number of
-             trackpoints per hexagon. My hexagons in Plate Carree
-             look afwul in Web Mercator, apologies.
-             Tracks are color coded by average speed, blue is slow and red is fast</p>
+             My map shows waypoints, trackpoints and most visited
+             countries.  Tracks are color coded by average speed,
+             blue is slow and red is fast</p>
+        </div>
+        <div id="button" onclick="layers(this,'sports')">
+          <h1 id="title">Sports</h1>
+          <p id="explain">Cycling, skating, etc. All tracks recorded with
+             a sports watch or bike navigator. Blue is slow, red is fast.</p>
         </div>
         <div id="button" onclick="layers(this,'edwin')">
           <h1 id="title">Wikimap</h1>

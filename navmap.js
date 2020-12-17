@@ -13,9 +13,10 @@ var projdata = new ol.proj.Projection({
 //------------------------------------------------------------
 //                  Background layers       
 //------------------------------------------------------------
-var osm   = new ol.layer.Tile({source: new ol.source.OSM()});
-var toner = new ol.layer.Tile({source: new ol.source.Stamen({layer: 'toner'})});
-var water = new ol.layer.Tile({source: new ol.source.Stamen({layer: 'watercolor'})});
+var osm     = new ol.layer.Tile({source: new ol.source.OSM()});
+var toner   = new ol.layer.Tile({source: new ol.source.Stamen({layer: 'toner-lite'})});
+var terrain = new ol.layer.Tile({source: new ol.source.Stamen({layer: 'terrain'})});
+var water   = new ol.layer.Tile({source: new ol.source.Stamen({layer: 'watercolor'})});
 
 //------------------------------------------------------------
 //                     Edwin lagen
@@ -80,8 +81,22 @@ var tracks  = new ol.layer.Image({
     serverType: /** @type {ol.source.WMSServerType} */ ('mapserver')
   })
 });
-waypoints.set('name', 'Tracks');
-waypoints.set('baselayer', false);
+tracks.set('name', 'Tracks');
+tracks.set('baselayer', false);
+
+var sports  = new ol.layer.Image({
+  source: new ol.source.ImageWMS({
+    url: 'http://wold.xs4all.nl/cgi-bin/mapserv?map=/var/www/html/edwin/edwin.map&service=wms&',
+    params: {
+      'LAYERS': 'Sports',
+      'FORMAT': 'image/png'
+    },
+    projection: projused,
+    serverType: /** @type {ol.source.WMSServerType} */ ('mapserver')
+  })
+});
+sports.set('name', 'Sports');
+sports.set('baselayer', false);
 
 var trackpoints  = new ol.layer.Image({
   source: new ol.source.ImageWMS({
@@ -169,11 +184,10 @@ beidou_points.set('baselayer', false);
 //------------------------------------------------------------
 //                       The map
 //------------------------------------------------------------
-// var layerlist = [ osm, trackpoints, waypoints ];
-// var navmaplayers = [ osm, activity, trackpoints, waypoints ];
-var navmaplayers = [ toner, countries, tracks, waypoints ];
+var navmaplayers = [ terrain, countries, tracks, waypoints ];
+var sportslayers = [ toner, sports ];
 var edwinlayers  = [ water, wikinl, wikien ];
-var beidoulayers = [ osm, beidou_used, beidou_points ];
+var beidoulayers = [ toner, beidou_used, beidou_points ];
 var heightlayers = [ osm, elevation, tracks, waypoints ];
 
 var overview = new ol.View({ projection: projused,
@@ -204,6 +218,7 @@ function layers(e,topic) {
   //   e.style.color = 'red';
   if (topic == 'edwin')     {map.setLayerGroup(new ol.layer.Group({layers: edwinlayers}));}
   if (topic == 'overview')  {map.setLayerGroup(new ol.layer.Group({layers: navmaplayers}));}
+  if (topic == 'sports')    {map.setLayerGroup(new ol.layer.Group({layers: sportslayers}));}
   if (topic == 'beidou')    {map.setLayerGroup(new ol.layer.Group({layers: beidoulayers}));}
   if (topic == 'elevation') {map.setLayerGroup(new ol.layer.Group({layers: heightlayers}));}
   map.render();
