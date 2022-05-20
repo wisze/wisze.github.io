@@ -1,0 +1,74 @@
+
+LAYER
+  NAME "Waypoints"
+  TYPE POLYGON
+
+  CONNECTIONTYPE OGR
+  CONNECTION "20180121.webmercator.sqlite"
+  DATA "waypoints"
+
+  STATUS ON
+  METADATA
+    "wms_title" "Waypoints"
+  END
+  CLASS
+    MAXSCALEDENOM 
+    MINSCALEDENOM 11100000
+    EXPRESSION ([distance] = 1)
+    NAME "waypoints_clustered"
+    STYLE
+      COLORRANGE 0 150 150 150 150 0 # Blue to red
+      DATARANGE 1 50000
+      RANGEITEM "number"
+      OPACITY 70
+    END
+  END
+  CLASS
+    MAXSCALEDENOM 11100000
+    MINSCALEDENOM 3300000
+    EXPRESSION ([distance] = 0.3)
+    NAME "waypoints_clustered"
+    STYLE
+      COLORRANGE 0 150 150 150 150 0 # Blue to red
+      DATARANGE 1 50000
+      RANGEITEM "number"
+      OPACITY 70
+    END
+  END
+  CLASS
+    MAXSCALEDENOM 3300000
+    MINSCALEDENOM 1100000
+    EXPRESSION ([distance] = 0.1)
+    NAME "waypoints_clustered"
+    STYLE
+      COLORRANGE 0 150 150 150 150 0 # Blue to red
+      DATARANGE 1 50000
+      RANGEITEM "number"
+      OPACITY 70
+    END
+  END
+  CLASS
+    MAXSCALEDENOM 1100000
+    MINSCALEDENOM 300000
+    EXPRESSION ([distance] = 0.03)
+    NAME "waypoints_clustered"
+    STYLE
+      COLORRANGE 0 150 150 150 150 0 # Blue to red
+      DATARANGE 1 50000
+      RANGEITEM "number"
+      OPACITY 70
+    END
+  END
+  CLASS
+    MAXSCALEDENOM 300000
+    MINSCALEDENOM 100000
+    EXPRESSION ([distance] = 0.01)
+    NAME "waypoints_clustered"
+    STYLE
+      COLORRANGE 0 150 150 150 150 0 # Blue to red
+      DATARANGE 1 50000
+      RANGEITEM "number"
+      OPACITY 70
+    END
+  END
+END

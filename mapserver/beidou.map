@@ -1,0 +1,146 @@
+MAP
+  NAME "Edwin"
+
+  EXTENT -180 -90 180 90
+  SIZE 1200 800
+  IMAGECOLOR 200 200 200
+  MAXSIZE 4096
+  UNITS METERS
+  SHAPEPATH "/var/www/html/data"
+  SYMBOLSET "symbols.txt"
+  FONTSET   "fonts.txt"
+ 
+  CONFIG "MS_ERRORFILE" "/var/www/html/mapserv-log/mapserv_error.txt"
+  DEBUG 0
+
+  PROJECTION
+    "init=epsg:3857"
+    "init=epsg:4326"
+  END
+
+  WEB
+    METADATA
+      "wms_title"          "Beidou"
+      "wms_onlineresource" "http://wold.xs4all.nl/cgi-bin/mapserv?map=/var/www/html/edwin/beidou.map"
+      "wms_srs"            "EPSG:3857 EPSG:4326" 
+      "wms_enable_request" "GetCapabilities GetMap GetFeatureInfo GetLegendGraphic"
+    END
+  END
+
+  LAYER
+    NAME "Used"
+    TYPE POLYGON
+
+    SCALETOKEN
+      NAME "%width%"
+      VALUES
+        "0"         "0.0"
+        "500000"    "0.1"
+        "1000000"   "0.3"
+        "5000000"   "1.0"
+        "10000000"   "3.0"
+        "50000000"  "10.0"
+      END # VALUES
+    END # SCALETOKEN
+
+    CONNECTIONTYPE POSTGIS
+    CONNECTION "host=localhost dbname=satnav user=edwin password=onkel-x"
+    DATA "wkb_geometry from ( select * from hex_grid where hexwidth = %width% and beidou_used_max > 0) as subquery using unique gid"
+    PROCESSING "CLOSE_CONNECTION=DEFER"
+
+    STATUS ON
+    METADATA
+      "wms_title" "Used"
+    END
+    CLASS
+      NAME "hexbins"
+      STYLE
+        COLORRANGE 250 0 0 0 250 0 # Red to green
+        DATARANGE 1 6
+        RANGEITEM "beidou_used_max"
+        OPACITY 70
+      END
+      TEXT (tostring([beidou_used_perc],"%.1f"))
+      LABEL
+        COLOR  50 50 50
+        FONT "verdana"
+        TYPE truetype
+        SIZE 10
+        POSITION CC
+        PARTIALS TRUE
+      END
+    END
+  END 
+
+  LAYER
+    NAME "View"
+    TYPE POLYGON
+
+    SCALETOKEN
+      NAME "%width%"
+      VALUES
+        "0"         "0.0"
+        "500000"    "0.1"
+        "1000000"   "0.3"
+        "5000000"   "1.0"
+        "10000000"   "3.0"
+        "50000000"  "10.0"
+      END # VALUES
+    END # SCALETOKEN
+
+    CONNECTIONTYPE POSTGIS
+    CONNECTION "host=localhost dbname=satnav user=edwin password=onkel-x"
+    DATA "wkb_geometry from ( select * from hex_grid where hexwidth = %width% and beidou_view_max > 0 ) as subquery using unique gid"
+    PROCESSING "CLOSE_CONNECTION=DEFER"
+
+    STATUS ON
+    METADATA
+      "wms_title" "View"
+    END
+    CLASS
+      NAME "hexbins"
+      STYLE
+        COLORRANGE 250 0 0 0 250 0 # Red to green
+        DATARANGE 1 6
+        RANGEITEM "beidou_view_max"
+        OPACITY 70
+      END
+      TEXT (tostring([beidou_view_mean],"%.1f"))
+      LABEL
+        COLOR  50 50 50
+        FONT "verdana"
+        TYPE truetype
+        SIZE 10
+        POSITION CC
+        PARTIALS TRUE
+      END
+    END
+  END 
+
+  LAYER
+    NAME "BeidouPoints"
+    TYPE POINT
+
+    CONNECTIONTYPE POSTGIS
+    CONNECTION "host=localhost dbname=satnav user=edwin password=onkel-x"
+    DATA "wkb_geometry from ( select track_points.ogc_fid as ogc_fid, track_points.wkb_geometry as wkb_geometry, beidou.used as used from track_points, beidou where track_points.ogc_fid = beidou.ogc_fid ) as subquery using unique ogc_fid"
+    PROCESSING "CLOSE_CONNECTION=DEFER"
+
+    CLASSITEM "used"
+    STATUS ON
+    METADATA
+      "wms_title" "BeidouPoints"
+    END
+    CLASS
+      NAME "point"
+      MAXSCALEDENOM 10000000
+      STYLE
+        SYMBOL "point"
+        COLORRANGE 50 0 0 0 50 0 # Red to green
+        DATARANGE 1 6
+        SIZE 3
+      END
+    END
+  END
+
+END
